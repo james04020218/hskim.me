@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시그널파이낸셜랩 자기소개서 - 김홍식</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- 기본 스타일 및 리셋 --- */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.8;
+            color: #444;
+            background-color: #f4f7fc; /* 배경에 연한 블루/그레이 적용 */
+            margin: 0;
+            padding: 40px 0;
+            word-break: keep-all; /* 한국어 텍스트 줄바꿈 최적화 */
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* --- 헤더 섹션 --- */
+        header {
+            background-color: #00529B; /* 메인 블루 컬러 */
+            color: #fff;
+            padding: 60px 50px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        /* --- 메인 콘텐츠 --- */
+        .main-content {
+            padding: 50px;
+        }
+        
+        /* 자기소개서 항목 스타일 */
+        .cover-letter-section {
+            margin-bottom: 50px;
+        }
+
+        /* 질문(Q) 스타일 */
+        h2.question {
+            color: #00529B;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            font-weight: 700;
+            display: flex;
+            align-items: baseline;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        h2.question::before {
+            content: 'Q.';
+            font-size: 1.5em;
+            color: #00529B;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* 답변(A) 스타일 */
+        .answer p {
+            font-size: 1em;
+            color: #555;
+            padding-left: 15px;
+        }
+
+        /* --- 포트폴리오 및 추가 섹션 스타일 --- */
+        h3.appendix-title {
+            font-size: 1.3em;
+            color: #333;
+            border-top: 2px solid #333;
+            padding-top: 30px;
+            margin-top: 80px;
+            margin-bottom: 25px;
+        }
+
+        /* 링크 스타일 */
+        .project-links ul {
+            list-style: none;
+        }
+
+        .project-links li {
+            margin-bottom: 15px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: #00529B;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+            display: block;
+            padding: 12px 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+
+        .project-links a:hover {
+            color: #003366;
+            background-color: #e8f0fe;
+        }
+
+        /* 코드 블록 (AI 프롬프트) 스타일 */
+        .code-block {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+             margin: 0;
+        }
+
+        .code-block code {
+            font-family: 'Roboto Mono', monospace; /* 코드 전용 폰트 적용 */
+            font-size: 0.85em;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* 결과물 예시 (메시지 박스) 스타일 */
+        .message-example {
+            background-color: #e8f0fe; /* 연한 블루 배경 */
+            border-left: 6px solid #00529B; /* 좌측 하이라이트 */
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .message-example pre {
+            font-family: 'Noto Sans KR', sans-serif; /* 본문 폰트 적용 */
+            font-size: 0.95em;
+            line-height: 1.7;
+            white-space: pre-wrap; /* 텍스트 줄바꿈 유지 */
+            margin: 0;
+        }
+
+
+        /* --- 반응형 대응 (모바일) --- */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 0;
+            }
+            .main-content {
+                padding: 30px;
+            }
+            header {
+                padding: 40px 30px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .answer p {
+                padding-left: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>시그널파이낸셜랩 자기소개서</h1>
+        </header>
+
+        <div class="main-content">
+
+            <section class="cover-letter-section">
+                <h2 class="question">지원 동기는 무엇이며 왜 이 회사여야 하는지 알려주세요.</h2>
+                <div class="answer">
+                    <p>
+                        시그널파이낸셜랩의 고객 중심 가치와 혁신적인 금융 서비스에 깊이 공감하여 지원하게 되었습니다. 오랜 기간 통신 및 IT 업계에서 고객 상담과 시스템 기획, 영업 등 다양한 경험을 쌓으며 고객 만족을 최우선으로 삼아왔습니다. LGU+ 수도권 OPU기획팀에서 대리점 관리와 전산시스템 구축 TF에 참여해 현장과 개발을 잇는 역할을 수행했고, 이후 직접 대리점과 판매점을 운영하며 실질적인 고객 니즈와 시장 변화를 체감했습니다. 최근에는 미소에서 통신 상품 판매와 동시에 자체 솔루션(상품 계산기, 설득문자 생성 프로그램 등)을 개발하여 현장에서 즉각적인 고객 설득과 응대 효율성 향상을 이끌었습니다. 시그널파이낸셜랩이 추구하는 혁신과 고객 가치를, 저의 실무 역량과 IT 활용 경험으로 더욱 공고히 할 자신이 있습니다. 귀사의 성장과 혁신에 저의 경험이 실질적인 기여가 될 것이라 확신합니다.
+                    </p>
+                </div>
+            </section>
+
+            <section class="cover-letter-section">
+                <h2 class="question">왜 eXpert가 되고 싶으신가요? 회사의 직무와 본인과의 적합성을 알려주세요.</h2>
+                <div class="answer">
+                    <p>
+                        상담 전문가로 성장하고 싶은 이유는, 변화하는 금융 환경 속에서 고객에게 실질적 도움이 되는 상담 서비스를 제공하고 싶기 때문입니다. LGU+에서 전산 시스템 TF에 참여해 현장 요구를 IT 개발에 반영하며 체계적이고 신뢰받는 상담 프로세스를 경험했고, 이후 직접 대리점 운영과 통신3사 상품 판매를 하며 현장에서 고객의 다양한 문제를 즉시 해결해 왔습니다. 특히, 상담업무에서 CRM 소프트웨어를 활용해 고객 정보를 체계적으로 관리하고, 자체 개발한 상품 계산기와 설득문자 생성 프로그램을 통해 복잡한 상품을 쉽게 안내하며 고객 만족도를 높였습니다. 이러한 경험은 시그널파이낸셜랩이 요구하는 상담원 직무에 최적화된 역량이라 생각합니다. 고객의 고민을 공감하고, 문제를 정확히 파악해 솔루션을 제시하는 자세로 귀사의 전문 상담원으로 성장하겠습니다.
+                    </p>
+                </div>
+            </section>
+
+            <section class="cover-letter-section">
+                <h2 class="question">왜 나를 채용 해야하나요?</h2>
+                <div class="answer">
+                    <p>
+                        저는 현장 경험과 IT 활용 능력을 겸비한 상담원입니다. LGU+에서 대리점 관리와 전산 시스템 구축 TF 경험, 이후 직접 대리점과 판매점을 운영하며 다양한 고객 유형을 응대하고, 빠르게 변화하는 시장 환경에 적응해 왔습니다. 최근 미소에서 통신3사 상품 판매를 하며 복잡한 상품 정보를 쉽고 정확하게 전달하는 솔루션(상품 계산기, 설득문자 자동화 프로그램 등)을 직접 개발하여 현장 효율성과 고객 만족을 동시에 높였습니다. 책임감 있는 태도로 문제를 끝까지 해결하고, 위기 상황에서는 공감과 신속한 대응으로 고객 신뢰를 얻었습니다. 시그널파이낸셜랩의 혁신적 상담 서비스에 저의 실무 역량과 IT 기반 솔루션 경험을 더해 최고의 성과를 창출할 수 있다고 자신합니다.
+                    </p>
+                </div>
+            </section>
+
+            <section class="cover-letter-section">
+                <h2 class="question">자발적으로 추진/시도/도전한 경험을 알려주세요.</h2>
+                <div class="answer">
+                    <p>
+                        최근 미소에서 통신 상품 판매를 담당하며, 고객 상담 과정에서 상품 안내와 혜택 계산이 비효율적인 점을 느꼈습니다. 이를 개선하기 위해 직접 상품 계산기와 설득문자 자동화 프로그램을 개발해 현장에 적용했습니다. 파이썬 등 국비지원 컴퓨터학원에서 익힌 프로그래밍 지식을 활용해 고객별 맞춤 안내와 실시간 혜택 안내가 가능하도록 솔루션을 구축했습니다. 그 결과, 상담 시간이 단축되고, 고객 이해도가 높아져 계약 성사율이 향상되었습니다. 이러한 경험은 문제 해결을 위한 자기 주도성과 도전 정신, 그리고 기술을 통한 현장 혁신의 중요성을 체득하는 계기가 되었습니다. 앞으로도 적극적으로 새로운 시도를 통해 업무 효율과 고객 만족을 동시에 높이겠습니다.
+                    </p>
+                </div>
+            </section>
+
+            <h3 class="appendix-title">[참고자료 1] 자체 개발 상품계산기</h3>
+            <div class="project-links">
+                <ul>
+                    <li><a href="https://james04020218.github.io/sk-discount-calculator/" target="_blank">SK 할인 계산기 (https://james04020218.github.io/sk-discount-calculator/)</a></li>
+                    <li><a href="https://james04020218.github.io/kt-bundle-discount-calculator/" target="_blank">KT 결합 할인 계산기 (https://james04020218.github.io/kt-bundle-discount-calculator/)</a></li>
+                    <li><a href="https://james04020218.github.io/lg-discount-calculator/" target="_blank">LG 할인 계산기 (https://james04020218.github.io/lg-discount-calculator/)</a></li>
+                </ul>
+            </div>
+
+            <h3 class="appendix-title">[참고자료 2] 고객 설득 문자 생성 AI 프롬프트 (설계 내역)</h3>
+            <div class="code-block">
+                <pre><code>const smsPrompt = `### Master Prompt: Generate a Natural and Persuasive Customer Message ###
+
+**1. Persona & Ethos Configuration**
+* **Role:** 'Team Leader Kim Hong-sik', a communications solutions expert with 10 years of experience.
+* **Core Belief:** My mission is not to sell products, but to find the most stable and economical 'optimal solution' for the customer's communication environment for the next 3 years.
+* **Tone:** A mentor's tone that combines sincere empathy with confident professionalism.
+
+**2. Input Data (Customer Context)**
+* **Customer's Core Need:** ${customerNeeds}
+* **Customer's Key Objection:** ${customerConcerns}
+* **Proposed Solution:** ${proposal}
+* **Available Card Benefit:** ${affiliateCard}
+
+**3. Task Directive: Craft a natural, persuasive message to win over the customer.**
+Resolve the customer's final hesitation (${customerConcerns}) and generate a message to encourage contract signing. Create a highly readable, natural, and fluid message following the flow guide below, without any explicit markers like "[Step]".
+
+
+**[Message Flow Guide]**
+
+1. **Opening (Empathy):** Start with "안녕하세요, 고객님..." and mention the customer's concern (${customerConcerns}) again. Warmly express that you respect and fully understand their careful consideration.
+
+2. **Body (Expert Solution):** Present an expert solution that directly addresses the concern. Acknowledge their point of view ("고객님 말씀처럼...") but clearly and concisely explain the reason for the better recommendation from a long-term perspective (e.g., stability, efficiency).
+    * **(Apply Conditional Logic)** Naturally weave in the appropriate strategy based on the customer's concern (${customerConcerns}):
+        * **If the concern is about 'monthly fee':** Present the ${affiliateCard} benefit as a 'hidden saving tip' and emphasize the actual cost reduction.
+        * **If the concern is about the '3-year contract':** Redefine the contract as a 'price-hike shield' to explain its long-term advantages.
+        * **If the concern is about 'insufficient gifts/benefits':** Mention additional promotions to highlight the benefits of deciding now.
+
+3. **Core Value Summary (Value Visualization):** Use an expression like "✨ 정리해 드리자면..." to draw attention, then summarize the core values the customer will gain in up to 3 clear bullet points (*). (e.g., * 업무 효율 (Work Efficiency), * 비용 절감 (Cost Savings), * 최대 혜택 (Maximum Benefits))
+
+4. **Closing (Low-Pressure Call to Action):** Use a phrase that reduces pressure, such as "결코 결정을 재촉하려는 것은 아닙니다" (I'm not trying to rush your decision). Convey your genuine intention as an expert to help them make the most advantageous choice. Propose a simple, easy next step like "간단히 '확인'이라고만 보내주셔도 좋습니다" (A simple reply of 'OK' is perfectly fine).
+
+**4. Final Output Conditions**
+* **Format:** A single, complete SMS message without any step labels.
+* **Readability:** Intuitive and easy to read, using appropriate line breaks and bullet points.
+* **Tone:** Must feel genuine and reflect the persona of 'Team Leader Kim Hong-sik', not robotic.
+* **Language:** **The final output message MUST BE WRITTEN ENTIRELY in natural, fluent KOREAN.**
+* **Other:** Use 1-2 friendly emojis (✨, 😊, etc.).
+`;</code></pre>
+            </div>
+
+            <h3 class="appendix-title">[참고자료 3] 고객 설득 문자 결과물 예시</h3>
+            <div class="message-example">
+                <pre>안녕하세요, 고객님, 팀장 김홍식입니다.
+
+고객님께서 카톡 동영상이 뱅뱅 돌고 잘 안 뜨는 불편함을 겪고 계시다는 말씀, 저도 무척 공감합니다. 그만큼 신중하게 고민하시는 마음을 제가 누구보다 잘 이해하고 있습니다.
+
+고객님 말씀처럼, 인터넷 환경이 불안정하면 사소한 영상 하나 보는 것도 큰 스트레스가 됩니다. 제가 10년간 이 분야에서 고객님들의 통신 환경을 컨설팅해 오면서 가장 중요하게 생각하는 것이 바로 '안정성'과 '최적화'입니다.
+
+현재 제안 드린 '인터넷 500메가'는 단순한 속도 업그레이드를 넘어, 고객님 댁의 모든 기기가 막힘없이 원활하게 동영상을 시청하고, 쾌적하게 인터넷을 사용할 수 있도록 설계된 '최적의 속도'입니다. 여기에 전용 와이파이까지 함께 설치되면, 집안 어디에서든 끊김 없는 무선 인터넷을 경험하실 수 있습니다.
+
+또한, 음성 인식 기능이 있는 스마트 3 셋톱박스로 복잡한 조작 없이 "○○ 틀어줘" 한마디로 원하시는 콘텐츠를 바로 즐길 수 있어 사용 편의성까지 확실히 개선될 겁니다. 이는 단순히 새 상품을 쓰는 것을 넘어, 앞으로 3년간 고객님의 모든 디지털 경험을 한 차원 높여드릴 '종합 솔루션'이라고 자신합니다.
+
+✨ 정리해 드리자면, 고객님께서는
+* 카톡 동영상 버퍼링 없는 **쾌적하고 안정적인 인터넷 환경** (월 28,630원)
+* 현금 48만원과 70만원 상당의 **종합 OTT 6종 3년 무료 혜택**으로 최대 가치 경험
+* 음성 인식 셋톱박스로 **최고의 사용 편의성**까지 모두 누리실 수 있습니다.
+
+결코 결정을 재촉하려는 것은 아닙니다. 다만, 고객님께서 앞으로 3년 동안 가장 만족스럽고 경제적인 통신 생활을 하실 수 있도록, 통신 전문가로서 가장 현명한 길을 안내해 드리고 싶을 뿐입니다.
+
+더 궁금하신 점이 있으시면 언제든 편하게 물어보세요. 이 제안이 고객님께 최적의 선택이 될 것이라는 확신이 드신다면, 간단히 '확인'이라고만 보내주셔도 좋습니다. 😊</pre>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
